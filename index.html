@@ -5,8 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Vintage Cooperative at Prairie Trail</title>
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .wrapper {
+        padding: 5px;
+        max-width: 960px;
+        width: 95%;
+        margin: 20px auto;
+
+    }
+
+    header {
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .column {
+        flex: 1;
+        border: 1px solid blue;
+        margin: 5px;
+        padding: 5px;
+        background-color: #f2f2f2;
+        text-align: center;
+
+    }
+
+    .column:first-child {
+        margin-left: 0;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 10px;
+        margin: 5px;
+        background-color: #f0f0f0;
+        border: 1px solid red;
+        text-align: center;
+
+    }
+
+    @media screen and (max-width: 980px){
+        .row .column {
+            margin-bottom: 5px;
+            flex-basis: 40%;
+        }
+        .row .column:nth-last-child(2) {
+            margin-right: 0;
+        }
+        .row .column:last-child {
+            flex-basis: 100%;
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 680px) {
+        .row .column {
+            flex-basis: 100%;
+            margin: 0 0 5px 0;
+        }
+    }
+  </style>
   </head>
   <body>
+    <div class="wrapper">
     <div class = "header"><!--logo-->
       <div class = "nav">
         <ul>
@@ -19,58 +105,84 @@
       </div>
       <h1>Welcome to Vintage Cooperative at Prairie Trail</h1> <!--Image in background-->
     </div>
-    <div class = "introP">
+    <div class = "introP row">
+      <div class="column">
       <p>By living maintenance free life at Vintage Cooperative of Prairie Trail, you will have the freedom to enjoy this amazing neighborhood. Located in the heart of the Prairie Trail District, our 55+ residential community is just walking distance to all the amenities that Prairie Trail has to offer.</p>
+        </div>
     </div>
 
-    <div class = "easyLiving">
+    <div class = "easyLiving row">
+      <div class="column">
       <h2>Say Hello to Easy Living!</h2>
-
-      <div class="contactBlock">
+      </div>
+      </div>
+      <div class="row">
+      <div class="contactBlock column">
         <h3>Contact</h3><!--Image in background-->
       </div>
 
-      <div class="amenitiesBlock">
+      <div class="amenitiesBlock column">
         <h3>Amenities</h3><!--Image in background-->
       </div>
+    </div>
+  
+    <div class="row">
 
-      <div class="QBlock">
+      <div class="QBlock column">
         <h3>What is a Senior Housing Cooperative?</h3><!--Image in background-->
       </div>
 
-      <div class="floorPlanBlock">
+      <div class="floorPlanBlock column">
         <h3>Floor Plans</h3><!--Image in background-->
       </div>
     </div>
+    
 
-    <div class = "testimonials">
-
-      <div class = "testimonialBlock">
+    
+      <div class="row">
+        <div class="column">
+      <h2>Testimonials</h2>
+          </div>
+        </div>
+        <div class="row">
+      <div class = "testimonialBlock column">
         <!--Rounded image-->
         <p>"My wife and I love the strong sense of community! Combine that with maintenance-free living and I was sold."</p>
         <h5>-Brian Hoffman</h5>
       </div>
 
-      <div class = "testimonialBlock">
+      <div class = "testimonialBlock column">
         <!--Rounded image-->
         <p>"Now I can fully enjoy my retirement without needing to worry about maintaining a home. Now the only thing I worry about is my golf swing!"</p>
         <h5>-Jason Menoa</h5>
       </div>
 
-      <div class = "testimonialBlock">
+      <div class = "testimonialBlock column">
         <!--Rounded image-->
         <p>"Everything I could ever want is just a short walk away. Services, shops and restaurants all right around the corner." </p>
         <h5>-Wanda Johnson</h5>
       </div>
 
     </div>
+  
 
     <div class = "CTA">
+      <div class="row">
+      <div class="column">
       <h2>Contact Us and Schedule a Tour Today!</h2>
+      </div>
+    </div>
+      <div class="row">
+        <div class="column">
       <a href=""><button>Contact Us</button></a>
+          </div>
+      </div>
+      
     </div>
 
     <div class = "footer">
+      <div class="row">
+        <div class="column">
       <div class = "navFooter">
         <ul>
           <a href = "#"><li>Home</li></a>
@@ -79,7 +191,8 @@
           <a href = "contact.html"><li>Contact</li></a>
         </ul>
       </div>
-
+    </div>
+    <div class="column">
       <div class = "address">
         <h6>Vintage Cooperative Of Prairie Trail</h6>
         <address>1370 SW Magazine Road<br>
@@ -87,7 +200,13 @@
         515-729-2040<br>
         ptoffice@vintagecooperatives.com</address>
       </div>
+      </div>
+      <div class="column">
+        <p>logo goes here</p>
+      </div>
 
+    </div>
+    </div>
     </div>
   </body>
 </html>
