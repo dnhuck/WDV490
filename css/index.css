@@ -1,0 +1,56 @@
+.imageBackground {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/watercolor.jpg");
+  background-position: 50% 30%;
+  margin-bottom: 5%; }
+  .imageBackground h1 {
+    padding-top: 10%;
+    color: white;
+    font-size: 250%;
+    text-shadow: 2px 2px #000000; }
+
+.introP {
+  padding: 2%;
+  border-top: thin solid #000000;
+  border-bottom: thin solid #000000; }
+
+.easyLiving h2 {
+  text-decoration: underline;
+  margin-top: 5%;
+  font-family: 'Playfair Display', serif; }
+
+.contactBlock, .amenitiesBlock, .QBlock, .floorPlanBlock {
+  background-color: #757D79;
+  height: 400px; }
+  .contactBlock h3, .amenitiesBlock h3, .QBlock h3, .floorPlanBlock h3 {
+    margin-top: 180px;
+    font-family: 'Playfair Display', serif; }
+
+.testimonials {
+  margin-top: 5%; }
+  .testimonials h2 {
+    font-family: 'Playfair Display', serif; }
+  .testimonials .testimonialBlock {
+    background-color: white;
+    box-shadow: 2px 2px #757D79;
+    border: thin solid #000000; }
+
+.CTA {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  .CTA h2 {
+    background-color: #757D79;
+    color: White;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px #000000; }
+  .CTA a :hover {
+    text-shadow: 2px 2px 5px black; }
+  .CTA a button {
+    background-color: #8F9E59;
+    color: white;
+    height: 130%;
+    margin: auto;
+    font-size: 100%;
+    padding: 1%;
+    font-family: 'Playfair Display', serif; }
