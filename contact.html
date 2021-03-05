@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/structure.css">
     <title>Vintage Cooperative at Prairie Trail - Contact</title>
   </head>
   <body>
+    <div class="wrapper">
     <div class = "header"><!--logo-->
       <div class = "nav">
         <ul>
@@ -17,29 +19,48 @@
           <a href = "#"><li>Contact</li></a>
         </ul>
       </div>
+      <div class="row">
+        <div class="column">
         <h1>Contact Us</h1><!--Image in background-->
+        </div>
+        </div>
     </div>
 
     <div class = "formSection">
       <form>
+        <div class="row">
+          <div class="column">
         <label for="firstName">First Name:</label><br>
         <input type="text" id="firstName" name="firstName"><br><br>
-
+        </div>
+        <div class="column">
         <label for="lastName">Last Name:</label><br>
         <input type="text" id="lastName" name="lastName"><br><br>
-
+        </div>
+        </div>
+        <div class="row">
+          <div class="column">
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br><br>
-
+            </div>
+            <div class="column">
         <label for="phone">Phone:</label><br>
         <input type="tel" id="phone" name="phone"><br><br>
-
+        </div>
+          </div>
+          <div class="row">
+            <div class="column">
         <label for="address">Address:</label><br>
         <input type="text" id="address" name="address"><br><br>
+        </div>
+        <div class="column">
 
         <label for="cityStateZip">City, State Zip:</label><br>
         <input type="text" id="cityStateZip" name="cityStateZip"><br><br>
-
+        </div>
+            </div>
+            <div class="row">
+              <div class="column">
         <label for="floorPlans">Floor Plans:</label><br>
         <select name="floorPlans" id="floorPlans">
           <option value="willow">Willow</option>
@@ -52,7 +73,8 @@
           <option value="hickory">Hickory</option>
           <option value="maple">Maple</option>
         </select><br><br>
-
+        </div>
+        <div class="column">
         <label for="moveTime">How soon are you looking to move?</label><br>
         <input type="radio" id="3-6months" name="moveTime" value="3-6months">
         <label for="3-6months">3-6 months</label><br>
@@ -60,7 +82,9 @@
         <label for="6-12months">6-12 months</label><br>
         <input type="radio" id="12plusmonths" name="moveTime" value="12plusmonths">
         <label for="12plusmonths">12+ months</label><br><br>
+        </div>
 
+        <div class="column">
         <label>How did you hear about us?</label><br>
         <input type="checkbox" id="mail" name="mail" value="Mail">
         <label for="mail">Mail</label><br>
@@ -72,40 +96,62 @@
         <label for="driveBy">Drive By</label><br>
         <input type="checkbox" id="other" name="other" value="Other">
         <label for="other">Other</label><br><br>
-
+        </div>
+        </div>
+        <div class="row">
+          <div class="column">
         <h5>Schedule a Tour with us today!</h5><br><br>
-
+        </div>
+        </div>
+        <div class="row">
+          <div class="column">
         <label for="date">Select Date</label><br>
         <input type="date" id="date" name="date"><br><br>
-
+        </div>
+        <div class="column">
         <label>Preferred Time</label><br>
         <input type="checkbox" id="morning" name="morning" value="Morning">
         <label for="morning">Morning</label><br>
         <input type="checkbox" id="afternoon" name="afternoon" value="Afternoon">
         <label for="afternoon">Afternoon</label><br><br>
-
+        </div>
+        </div>
+        <div class="row">
+          <div class="column">
         <label for="commentOrQuestion">Leave a Comment or Question</label><br>
         <textarea name="commentOrQuestion" rows="8" cols="80"></textarea><br><br>
 
 
         <input type="submit" value="Submit">
+        </div>
+        </div>
+        </form>
       </form>
     </div>
 
     <div class = "map">
+      <div class="row">
+        <div class="column">
       <!--map embed-->
+      <p>embedded map would go here.</p>
+      </div>
+      </div>
     </div>
 
+    <!--footer starts here-->
     <div class = "footer">
+      <div class="row">
+        <div class="column">
       <div class = "navFooter">
         <ul>
-          <a href = "index.html"><li>Home</li></a>
+          <a href = "#"><li>Home</li></a>
           <a href = "about.html"><li>About</li></a>
           <a href = "floorPlans.html"><li>Floor Plans</li></a>
-          <a href = "#"><li>Contact</li></a>
+          <a href = "contact.html"><li>Contact</li></a>
         </ul>
       </div>
-
+    </div>
+    <div class="column">
       <div class = "address">
         <h6>Vintage Cooperative Of Prairie Trail</h6>
         <address>1370 SW Magazine Road<br>
@@ -113,7 +159,15 @@
         515-729-2040<br>
         ptoffice@vintagecooperatives.com</address>
       </div>
+      </div>
+      <div class="column">
+        <p>logo goes here</p>
+      </div>
 
+    </div>
+    </div>
+
+  <!--footer ends here-->
     </div>
   </body>
 </html>
