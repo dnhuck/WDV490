@@ -1,9 +1,8 @@
 $(document).ready(function(){
+
     $('.nav').html(`
         <div class="navRow">
-            <div class="navColumn">
-                <img src="images/logo.png" alt="logo">
-            </div>
+
             <div class="navColumn">
                 <div class="toggle">
                     <i class="fas fa-bars mobileMenu" area-hidden="true"></i>
@@ -23,4 +22,6 @@ $(document).ready(function(){
      $('.mobileMenu').click(function(){
         $('ul').toggleClass('active');
     });
+
 })
+

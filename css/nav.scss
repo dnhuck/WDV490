@@ -22,12 +22,14 @@ html{
     color: gray;
     font-size: 1.4rem;
     text-align: center;
-    font-family: 'serif';
 }
+  
+
 
   .nav a:hover {
     color: #8F9E59;
 }
+
 
   .nav .toggle {
     width: 100%;
@@ -80,12 +82,12 @@ html{
         color: #8F9E59;
         font-size: 1.4rem;
         text-align: center;
-        font-family: 'serif';
     }
 
     .nav .active {
-        display: block;
-    }
+        display: block; 
+    } 
+
 
     .navRow{
         display: block;
@@ -102,3 +104,4 @@ html{
     }
 
 }
+
