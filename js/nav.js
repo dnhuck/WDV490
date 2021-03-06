@@ -1,11 +1,7 @@
 $(document).ready(function(){
-    $('.header').html(`
 
+    $('.nav').html(`
         <div class="navRow">
-
-            <div class="navColumn">
-                <img src="images/logo.png" alt="logo">
-            </div>
 
             <div class="navColumn">
                 <div class="toggle">
@@ -19,7 +15,6 @@ $(document).ready(function(){
                     <li><a href = "contact.html">Contact</a></li>
                 </ul>
             </div>
-
        </div>
     `);
 
@@ -27,4 +22,6 @@ $(document).ready(function(){
      $('.mobileMenu').click(function(){
         $('ul').toggleClass('active');
     });
+
 })
+
