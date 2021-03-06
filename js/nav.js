@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.header').html(`
+    $('.nav').html(`
 
         <div class="navRow">
 
