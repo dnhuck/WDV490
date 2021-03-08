@@ -3,29 +3,40 @@
   width: 100%;
   background-image: url("../images/header.jpg");
   background-position: 50% 90%;
-  margin-bottom: 5%; }
-  .imageBackground h1 {
-    padding-top: 10%;
-    color: white;
-    font-size: 250%;
-    text-shadow: 2px 2px #000000; }
+  margin-bottom: 5%;
+}
+
+.imageBackground h1 {
+  padding-top: 10%;
+  color: white;
+  font-size: 250%;
+  text-shadow: 2px 2px #000000;
+}
 
 .CTA {
   margin-top: 5%;
-  margin-bottom: 5%; }
-  .CTA h2 {
-    background-color: #757D79;
-    color: white;
-    margin-bottom: 2%;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 2px 2px #000000; }
-  .CTA a :hover {
-    text-shadow: 2px 2px 5px black; }
-  .CTA a button {
-    background-color: #8F9E59;
-    color: white;
-    height: 130%;
-    margin: auto;
-    font-size: 100%;
-    padding: 1%;
-    font-family: 'Playfair Display', serif; }
+  margin-bottom: 5%;
+}
+
+.CTA h2 {
+  background-color: #757D79;
+  color: white;
+  margin-bottom: 2%;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px #000000;
+}
+
+.CTA a :hover {
+  text-shadow: 2px 2px 5px black;
+}
+
+.CTA a button {
+  background-color: #8F9E59;
+  color: white;
+  height: 130%;
+  margin: auto;
+  font-size: 100%;
+  padding: 1%;
+  font-family: 'Playfair Display', serif;
+}
+/*# sourceMappingURL=gallery.css.map */
