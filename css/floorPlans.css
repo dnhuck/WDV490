@@ -37,10 +37,11 @@
   margin-top: 15%;
   background-color: #000000;
   color: white;
-  width: 30%;
-  height: 250%;
+  width: 50%;
+  height: 25%;
   font-size: 100%;
   font-family: 'Playfair Display', serif;
+  cursor: pointer;
 }
 
 .CTA {
