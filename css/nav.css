@@ -17,8 +17,7 @@ html {
   text-decoration: none;
   color: gray;
   font-size: 1.4rem;
-  text-align: center;
-  font-family: 'serif'; }
+  text-align: center; }
 
 .nav a:hover {
   color: #8F9E59; }
@@ -64,8 +63,7 @@ html {
     text-decoration: none;
     color: #8F9E59;
     font-size: 1.4rem;
-    text-align: center;
-    font-family: 'serif'; }
+    text-align: center; }
 
   .nav .active {
     display: block; }
