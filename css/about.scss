@@ -45,11 +45,12 @@ $black: #000000;
       button {
        background-color: $green;
        color: white;
-       height: 130%;
+       height: auto;
        margin: auto;
        font-size: 100%;
        padding: 1%;
        font-family: 'Playfair Display', serif;
+       cursor: pointer;
      }
    }
 }

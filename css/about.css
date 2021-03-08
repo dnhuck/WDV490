@@ -39,10 +39,11 @@
 .Qsection a button {
   background-color: #8F9E59;
   color: white;
-  height: 130%;
+  height: auto;
   margin: auto;
   font-size: 100%;
   padding: 1%;
   font-family: 'Playfair Display', serif;
+  cursor: pointer;
 }
 /*# sourceMappingURL=about.css.map */
