@@ -11,21 +11,21 @@ $(document).ready(function(){
                     </ul>
                 </div>
             </div>
-
             <div class="column">
                 <div class = "address">
-                    <h6>Vintage Cooperative Of Prairie Trail</h6>
-                    <address>1370 SW Magazine Road<br>
+                    <address>Vintage Cooperative Of Prairie Trail
+                    1370 SW Magazine Road<br>
                     Ankeny, IA 50023<br>
-                    515-729-2040<br>
-                    ptoffice@vintagecooperatives.com</address>
+                    <a href="tel: 515-729-2040">515-729-2040</a><br>
+                    <a href="mailto: ptoffice@vintagecooperatives.com">ptoffice@vintagecooperatives.com</a></address>
                 </div>
             </div>
-                
+
             <div class="column">
                 <p>logo goes here</p>
             </div>
-            
+
         </div>
     `);
 })
+

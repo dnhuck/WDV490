@@ -9,12 +9,12 @@ html{
 .nav ul {
     list-style-type: none;
     text-align: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .nav li {
     display: inline-block;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .nav li a {
@@ -22,12 +22,14 @@ html{
     color: gray;
     font-size: 1.4rem;
     text-align: center;
-    font-family: 'serif'; 
 }
+  
+
 
   .nav a:hover {
-    color: #8F9E59; 
+    color: #8F9E59;
 }
+
 
   .nav .toggle {
     width: 100%;
@@ -35,7 +37,7 @@ html{
     text-align: center;
     color: #8F9E59;
     font-size: 40px;
-    display: none; 
+    display: none;
 }
 
 .nav img{
@@ -72,7 +74,7 @@ html{
 
     .nav ul li {
         display: block;
-        text-align: center; 
+        text-align: center;
     }
 
     .nav li a {
@@ -80,12 +82,12 @@ html{
         color: #8F9E59;
         font-size: 1.4rem;
         text-align: center;
-        font-family: 'serif'; 
     }
 
     .nav .active {
         display: block; 
     } 
+
 
     .navRow{
         display: block;
@@ -100,5 +102,6 @@ html{
         flex: 75%;
         padding-top: 10px;
     }
-    
+
 }
+
