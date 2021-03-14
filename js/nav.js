@@ -1,4 +1,5 @@
 $(document).ready(function(){
+<<<<<<< Updated upstream
     $('.header').html(`
 
         <div class="navRow">
@@ -8,6 +9,10 @@ $(document).ready(function(){
             </div>
 
             <div class="navColumn">
+=======
+    $('.nav').html(`
+            <nav>
+>>>>>>> Stashed changes
                 <div class="toggle">
                     <i class="fas fa-bars mobileMenu" area-hidden="true"></i>
                 </div>
@@ -17,6 +22,7 @@ $(document).ready(function(){
                     <li><a href = "floorPlans.html">Floor Plans</a></li>
                     <li><a href = "gallery.html">Gallery</a></li>
                     <li><a href = "contact.html">Contact</a></li>
+<<<<<<< Updated upstream
                 </ul>
             </div>
 
@@ -28,3 +34,32 @@ $(document).ready(function(){
         $('ul').toggleClass('active');
     });
 })
+=======
+                </ul>  
+            </nav> 
+    `);
+
+    $('.mobileMenu').click(function(){
+        $('ul').toggleClass('active');
+      });
+   
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
