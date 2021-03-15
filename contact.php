@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php
+require_once(__DIR__ . "/inc/contactForm.class.php");
+
+if(isset($_POST['submitButton'])) {
+	$contactForm = new ContactForm();
+
+	$contactForm->SetPropertiesFromArray($_POST);
+
+	$isValid = $contactForm->ValidateDataProperties();
+
+	if ($isValid) {
+		$contactForm->SendContactEmail();
+	}
+}
+
+?>
+
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -16,7 +32,7 @@
   <script src="js/footer.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <style> @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');</style>
-  
+
   <title>Vintage Cooperative at Prairie Trail - Contact</title>
 </head>
 
@@ -30,52 +46,54 @@
         <div class = "imageBackground">
           <h1>Contact Us</h1> <!--Image in background-->
         </div>
-    
-  
-      
-  
-     
-  
-      
-  
       </div>
 
     <div class = "formSection">
-      <form>
+      <form method="post" action="">
         <div class="row">
+					  <h1><?php echo $contactForm->mailMessage ?></h1>
+				</div>
+				<div class="row">
           <div class="column">
-        <label for="firstName">First Name:</label><br>
-        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="firstName">*First Name:</label><br>
+				<td class="error"><?php echo "$contactForm->firstNameError"; ?></td><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
         </div>
         <div class="column">
-        <label for="lastName">Last Name:</label><br>
-        <input type="text" id="lastName" name="lastName"><br><br>
+        <label for="lastName">*Last Name:</label><br>
+					<td class="error"><?php echo "$contactForm->lastNameError"; ?></td><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
         </div>
         </div>
         <div class="row">
           <div class="column">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
+        <label for="email">*Email:</label><br>
+					<td class="error"><?php echo "$contactForm->emailError"; ?></td><br>
+        <input type="email" id="email" name="email" required><br><br>
             </div>
             <div class="column">
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="phone">*Phone:</label><br>
+					<td class="error"><?php echo "$contactForm->phoneError"; ?></td><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
         </div>
           </div>
           <div class="row">
             <div class="column">
-        <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address"><br><br>
+        <label for="address">*Address:</label><br>
+					<td class="error"><?php echo "$contactForm->addressError"; ?></td><br>
+        <input type="text" id="address" name="address" required><br><br>
         </div>
         <div class="column">
 
-        <label for="cityStateZip">City, State Zip:</label><br>
-        <input type="text" id="cityStateZip" name="cityStateZip"><br><br>
+        <label for="cityStateZip">*City, State Zip:</label><br>
+					<td class="error"><?php echo "$contactForm->cityStateZipError"; ?></td><br>
+        <input type="text" id="cityStateZip" name="cityStateZip" required><br><br>
         </div>
             </div>
             <div class="row">
               <div class="column">
         <label for="floorPlans">Floor Plans:</label><br>
+					<td class="error"><?php echo "$contactForm->floorPlansError"; ?></td><br>
         <select name="floorPlans" id="floorPlans">
           <option value="willow">Willow</option>
           <option value="redwood">Redwood</option>
@@ -90,6 +108,7 @@
         </div>
         <div class="column">
         <label for="moveTime">How soon are you looking to move?</label><br>
+					<td class="error"><?php echo "$contactForm->moveTimeError"; ?></td><br>
         <input type="radio" id="3-6months" name="moveTime" value="3-6months">
         <label for="3-6months">3-6 months</label><br>
         <input type="radio" id="6-12months" name="moveTime" value="6-12months">
@@ -100,6 +119,7 @@
 
         <div class="column">
         <label>How did you hear about us?</label><br>
+					<td class="error"><?php echo "$contactForm->hearAboutUsError"; ?></td><br>
         <input type="checkbox" id="mail" name="mail" value="Mail">
         <label for="mail">Mail</label><br>
         <input type="checkbox" id="socialMedia" name="socialMedia" value="Social Media">
@@ -114,16 +134,18 @@
         </div>
         <div class="row">
           <div class="column">
-        <h5>Schedule a Tour with us today!</h5><br><br>
+        <h3>Schedule a Tour with us today!</h3><br><br>
         </div>
         </div>
         <div class="row">
           <div class="column">
         <label for="date">Select Date</label><br>
+					<td class="error"><?php echo "$contactForm->dateError"; ?></td><br>
         <input type="date" id="date" name="date"><br><br>
         </div>
         <div class="column">
         <label>Preferred Time</label><br>
+					<td class="error"><?php echo "$contactForm->preferredTimeError"; ?></td><br>
         <input type="checkbox" id="morning" name="morning" value="Morning">
         <label for="morning">Morning</label><br>
         <input type="checkbox" id="afternoon" name="afternoon" value="Afternoon">
@@ -134,6 +156,7 @@
           <div class="column">
 
         <label for="commentOrQuestion">Leave a Comment or Question</label><br>
+					<td class="error"><?php echo "$contactForm->messageError"; ?></td><br>
         <textarea name="commentOrQuestion" rows="8" cols="80"></textarea><br><br>
         </div>
       </div>
@@ -145,9 +168,9 @@
 
 
         <div class = "column">
-          <input type="submit" value="Submit">
+          <input type="submit" id="submitButton" name = "submitButton" value="Submit">
         </div>
-      </div> 
+      </div>
       </form>
     </div>
 <div class="row">
@@ -164,7 +187,7 @@
   <!--footer ends here-->
 
     </div>
-    
-    
+
+
   </body>
 </html>

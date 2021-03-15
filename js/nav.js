@@ -10,7 +10,7 @@ $(document).ready(function(){
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "floorPlans.html">Floor Plans</a></li>
                 <li><a href = "gallery.html">Gallery</a></li>
-                <li><a href = "contact.html">Contact</a></li>
+                <li><a href = "contact.php">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -21,19 +21,3 @@ $(document).ready(function(){
         $('ul').toggleClass('active');
     });
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

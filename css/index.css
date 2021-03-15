@@ -4,14 +4,11 @@
   background-image: url("../images/watercolorOverlay.jpg");
   background-position: 50% 30%;
   margin-bottom: 5%; }
-
-
-.imageBackground h1 {
-  padding-top: 10%;
-  color: white;
-  font-size: 200%;
-  text-shadow: 2px 2px #000000;
-}
+  .imageBackground h1 {
+    padding-top: 10%;
+    color: white;
+    font-size: 200%;
+    text-shadow: 2px 2px #000000; }
 
 .introP {
   padding: 2%;
@@ -23,12 +20,65 @@
   margin-top: 5%;
   font-family: 'Playfair Display', serif; }
 
-.contactBlock, .amenitiesBlock, .QBlock, .floorPlanBlock {
+.contactBlock {
+  background-image: url("../images/contactBackground.jpg");
   background-color: #757D79;
-  height: 400px; }
-  .contactBlock h3, .amenitiesBlock h3, .QBlock h3, .floorPlanBlock h3 {
-    margin-top: 180px;
-    font-family: 'Playfair Display', serif; }
+  height: 400px;
+  opacity: 0.7; }
+  .contactBlock a {
+    text-decoration: none; }
+    .contactBlock a :hover {
+      cursor: pointer;
+      opacity: 1;
+      text-decoration: underline;
+      text-decoration-color: black; }
+
+.amenitiesBlock {
+  background-image: url("../images/galleryBackground.jpg");
+  background-color: #757D79;
+  height: 400px;
+  opacity: 0.7; }
+  .amenitiesBlock a {
+    text-decoration: none; }
+    .amenitiesBlock a :hover {
+      cursor: pointer;
+      opacity: 1;
+      text-decoration: underline;
+      text-decoration-color: black; }
+
+.QBlock {
+  background-image: url("../images/seniorCoopBackground.jpg");
+  background-color: #757D79;
+  height: 400px;
+  opacity: 0.7; }
+  .QBlock a {
+    text-decoration: none; }
+    .QBlock a :hover {
+      cursor: pointer;
+      opacity: 1;
+      text-decoration: underline;
+      text-decoration-color: black; }
+
+.floorPlanBlock {
+  background-image: url("../images/floorPlansBackground.jpg");
+  background-color: #757D79;
+  height: 400px;
+  opacity: 0.7; }
+  .floorPlanBlock a {
+    text-decoration: none; }
+    .floorPlanBlock a :hover {
+      cursor: pointer;
+      opacity: 1;
+      text-decoration: underline;
+      text-decoration-color: black; }
+
+.contactBlock h3, .amenitiesBlock h3, .QBlock h3, .floorPlanBlock h3 {
+  font-family: 'Playfair Display', serif;
+  width: 50%;
+  margin: 30% auto;
+  color: black;
+  background-color: white;
+  border: thin solid black; }
 
 .testimonials {
   margin-top: 5%; }
@@ -62,5 +112,3 @@
 .testImage img {
   width: 300px;
   border-radius: 100%; }
-
-/*# sourceMappingURL=index.css.map */

@@ -34,16 +34,89 @@ $black: #000000;
     }
   }
 
-  .contactBlock, .amenitiesBlock, .QBlock, .floorPlanBlock {
+  .contactBlock {
+    background-image: url("../images/contactBackground.jpg");
     background-color: $gray;
     height: 400px;
+    opacity: 0.7;
 
+    a {
+      text-decoration: none;
 
-    h3 {
-      margin-top: 180px;
-      font-family: 'Playfair Display', serif;
+      :hover {
+        cursor: pointer;
+        opacity: 1;
+        text-decoration: underline;
+        text-decoration-color: black;
+      }
     }
   }
+
+  .amenitiesBlock {
+    background-image: url("../images/galleryBackground.jpg");
+    background-color: $gray;
+    height: 400px;
+    opacity: 0.7;
+
+    a {
+      text-decoration: none;
+
+      :hover {
+        cursor: pointer;
+        opacity: 1;
+        text-decoration: underline;
+        text-decoration-color: black;
+      }
+    }
+  }
+
+  .QBlock {
+    background-image: url("../images/seniorCoopBackground.jpg");
+    background-color: $gray;
+    height: 400px;
+    opacity: 0.7;
+
+    a {
+      text-decoration: none;
+
+      :hover {
+        cursor: pointer;
+        opacity: 1;
+        text-decoration: underline;
+        text-decoration-color: black;
+      }
+    }
+  }
+
+  .floorPlanBlock {
+    background-image: url("../images/floorPlansBackground.jpg");
+    background-color: $gray;
+    height: 400px;
+    opacity: 0.7;
+
+    a {
+      text-decoration: none;
+
+      :hover {
+        cursor: pointer;
+        opacity: 1;
+        text-decoration: underline;
+        text-decoration-color: black;
+      }
+    }
+
+
+  }
+
+    .contactBlock h3, .amenitiesBlock h3, .QBlock h3, .floorPlanBlock h3 {
+      font-family: 'Playfair Display', serif;
+      width: 50%;
+      margin: 30% auto;
+      color: black;
+      background-color: white;
+      border: thin solid black;
+
+    }
 
 .testimonials {
   margin-top: 5%;
