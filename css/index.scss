@@ -45,7 +45,6 @@ $black: #000000;
     }
   }
 
-
 .testimonials {
   margin-top: 5%;
 
@@ -88,4 +87,9 @@ $black: #000000;
     }
   }
 
+}
+
+.testImage img{
+  width: 300px;
+  border-radius: 100%;
 }
