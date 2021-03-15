@@ -1,14 +1,17 @@
 .imageBackground {
   height: 300px;
   width: 100%;
-  background-image: url("../images/watercolor.jpg");
+  background-image: url("../images/watercolorOverlay.jpg");
   background-position: 50% 30%;
   margin-bottom: 5%; }
-  .imageBackground h1 {
-    padding-top: 10%;
-    color: white;
-    font-size: 250%;
-    text-shadow: 2px 2px #000000; }
+
+
+.imageBackground h1 {
+  padding-top: 10%;
+  color: white;
+  font-size: 200%;
+  text-shadow: 2px 2px #000000;
+}
 
 .introP {
   padding: 2%;
