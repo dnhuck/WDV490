@@ -22,7 +22,7 @@ $(document).ready(function(){
             </div>
 
             <div class="column">
-                <p>logo goes here</p>
+                <p><img src="images/logo.png" alt="vintage cooperatives logo>"</p>
             </div>
 
         </div>

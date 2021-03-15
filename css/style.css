@@ -16,7 +16,8 @@ body {
   font-weight: bold; }
 
 .header img {
-  width: 20%; }
+  width: 20%;
+  padding-top: 20px; }
 
 .nav {
   background-color: #757D79;
@@ -76,9 +77,13 @@ body {
     width: 50%; }
 
 @media (max-width: 768px) {
+  .header img {
+    width: 35%;
+    padding-top: 20px; }
+
   .nav .toggle {
     display: block;
-    text-align: right; }
+    text-align: center; }
 
   .nav ul {
     width: 100%;

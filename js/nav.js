@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.footer').html(`
+    $('.nav').html(`
     <div class="navRow">
         <div class="navColumn">
             <div class="toggle">

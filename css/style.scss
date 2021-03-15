@@ -4,8 +4,6 @@ $green: #8F9E59;
 $gray: #757D79;
 $black: #000000;
 
-
-
 body {
   font-size: 130%;
   background-color: #E0E1E1;
@@ -28,6 +26,7 @@ body {
 
   .header img {
     width: 20%;
+    padding-top: 20px;
   }
 
   .nav {
@@ -117,9 +116,14 @@ body {
 
 @media (max-width: 768px) {
 
+  .header img {
+    width: 35%;
+    padding-top: 20px;
+  }
+
   .nav .toggle {
       display: block;
-     text-align: right;
+     text-align: center;
    }
 
   .nav ul {
